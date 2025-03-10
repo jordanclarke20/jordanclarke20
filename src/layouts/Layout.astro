@@ -1,22 +1,24 @@
-<!doctype html>
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Coach and minibus hire for stress-free group travel across the UK." />
+	<meta name="keywords" content="coach hire, minibus hire, travel service, group transport" />
+	<meta name="author" content="Oakwards Travel" />
+	<title>Oakwards Travel</title>
+	<link rel="stylesheet" href="/src/styles/global.css">
+	<link rel="icon" type="image/svg+xml" href="/public/favicon.ico" />
 	</head>
-	<body>
+	<body class="bg-gray-100">
+	<Navbar />
+	<main class="container mx-auto px-4 py-8">
 		<slot />
+	</main>
+	<Footer />
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

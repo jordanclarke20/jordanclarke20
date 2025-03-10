@@ -1,11 +1,54 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<div>
+		<h1 class="text-4xl font-bold font-serif">
+			Welcome To Oakwards Travel
+		</h1>
+		<h2 class="text-2xl font-bold">
+			Where the journey begins
+		</h2>
+	</div>
+
+	<div>
+		<p>
+			Here at Oakwards Travel, it's not just about the destination; it's about the whole travel experience. From start to finish, we pride ourselves on the high standards we offer.
+		</p>
+	</div>
+	
+	<div>
+		<h3 class="text-xl font-bold">
+			Reliability and Excellent Customer Service
+		</h3>
+		<p>
+			Oakwards began trading in 2009 and quickly gained a good reputation for reliability and excellent customer service. We have enjoyed a fantastic loyal following over the years and would like to thank all our customers for their continued support.
+		</p>
+	</div>
+
+	<img src="/src/assets/owt-1.jpg" class="rounded-lg">
+
+	<div>
+		<h3 class="text-xl font-bold">
+			Wide Range of Quality Services 
+		</h3>
+		<p>
+			We pride ourselves on providing high-quality service to ensure a comfortable and enjoyable travel experience. From airport shuttle services to bus and coach rentals, we offer a wide range of services to meet your transportation requirements. Find out more <a href="/services" class="underline">here</a>
+		</p>
+	</div>
+
+	<div>
+		<h3 class="text-xl font-bold">
+			Experienced Team 
+		</h3>
+		<p>
+			Our experienced team is dedicated to providing exceptional customer service and ensuring your journey is smooth and hassle-free.
+		</p>
+	</div>
+
 </Layout>
